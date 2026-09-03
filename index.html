@@ -16,6 +16,8 @@
       --alert-bg: #fdf6e2;
       --danger: #c53030;
       --danger-bg: #fff5f5;
+      --trust: #6a1b9a;
+      --trust-bg: #f3e5f5;
     }
 
     * {
@@ -71,6 +73,17 @@
 
     .badge-age {
       background: #c53030;
+      color: #ffffff;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .badge-trust {
+      background: #6a1b9a;
       color: #ffffff;
       padding: 4px 10px;
       border-radius: 4px;
@@ -178,9 +191,9 @@
       font-size: 0.92rem;
     }
 
-    .callout-medical {
-      background-color: #f3e5f5;
-      border-left: 4px solid #7b1fa2;
+    .callout-trust {
+      background-color: var(--trust-bg);
+      border-left: 4px solid var(--trust);
       padding: 14px;
       border-radius: 4px;
       margin: 15px 0;
@@ -267,16 +280,17 @@
     <p>Portal Oficial de Términos de Servicio, Aviso de Privacidad y Gestión de Datos</p>
     <div class="badges">
       <span class="badge">App: tksenderismo (tksenderismo.apk)</span>
-      <span class="badge">Versión 5.1</span>
+      <span class="badge">Versión 5.2</span>
       <span class="badge-age">Exclusivo +18 Años</span>
+      <span class="badge-trust">Candado: Código de Confianza</span>
       <span class="badge">Google Play Data Safety Compliant</span>
     </div>
   </header>
 
   <nav>
-    <a href="#edad">Requisito de Edad (+18)</a>
+    <a href="#edad">Mayoría de Edad (+18)</a>
     <a href="#terminos">Términos y Privacidad</a>
-    <a href="#datos-medicos">Datos Médicos</a>
+    <a href="#datos-medicos">Datos Médicos y Código</a>
     <a href="#anuncios">Publicidad y GPS</a>
     <a href="#eliminacion">Eliminar Cuenta / Datos</a>
     <a href="#contacto">Contacto y Soporte</a>
@@ -291,7 +305,7 @@
         <strong>RESTRICCIÓN ESTRICTA DE EDAD Y CAPACIDAD LEGAL:</strong> El acceso, registro y utilización de la Aplicación está reservado <strong>única y exclusivamente a personas mayores de 18 años</strong> (o la mayoría de edad legal establecida en su país de residencia) en pleno goce de sus facultades jurídicas.
       </div>
       <p>
-        La aplicación no está orientada, dirigida ni diseñada para menores de edad. Al crear una cuenta y aceptar estos términos, el Usuario declara expresamente y bajo protesta de decir verdad que cuenta con al menos 18 años de edad y asume la responsabilidad total y legal sobre la veracidad de su declaración.
+        La aplicación no está orientada, dirigida ni diseñada para menores de edad. Al crear una cuenta y aceptar estos términos, el Usuario declara expresamente y bajo protesta de decir verdad que cuenta con al menos 18 años de edad y asume la total responsabilidad legal sobre la veracidad de su declaración.
       </p>
     </section>
 
@@ -352,16 +366,17 @@
       </table>
     </section>
 
-    <!-- SECCIÓN: DATOS MÉDICOS -->
+    <!-- SECCIÓN: DATOS MÉDICOS Y CÓDIGO DE CONFIANZA -->
     <section id="datos-medicos" class="card">
-      <h2>3. Tratamiento de Datos Médicos de Emergencia (Datos Efímeros)</h2>
-      <div class="callout-medical">
-        <strong>RÉGIMEN DE AUXILIO Y PRIMEROS AUXILIOS:</strong> Para salvaguardar la vida durante una travesía, el Usuario puede registrar voluntariamente información preventiva (tipo de sangre, alergias, enfermedades, medicamentos indispensables y contacto de auxilio).
+      <h2>3. Tratamiento Especial de Datos Médicos de Emergencia y Código de Confianza</h2>
+      <div class="callout-trust">
+        <strong>RÉGIMEN MÉDICO DE AUXILIO Y ACCESO DELEGADO:</strong> Para salvaguardar la vida e integridad física durante una travesía, el Usuario puede registrar voluntariamente información médica preventiva (tipo de sangre, alergias graves, enfermedades o padecimientos crónicos, medicamentos indispensables y contacto de auxilio).
       </div>
       <ul>
-        <li><strong>Finalidad Exclusiva:</strong> Soporte asistencial y rescate ante contingencias o accidentes en montaña.</li>
-        <li><strong>Visibilidad Restringida:</strong> Únicamente accesible para los integrantes de la cuadrilla o grupo activo durante la expedición en curso. Las redes de publicidad no tienen acceso a estos datos.</li>
-        <li><strong>Eliminación Automática (Ciclo Efímero):</strong> Al finalizar la ruta, los datos médicos <strong>se purgan y eliminan automáticamente</strong> de la sesión comunitaria y no quedan guardados en perfiles públicos.</li>
+        <li><strong>Finalidad Exclusiva de Rescate:</strong> Estos datos se recopilan con el único propósito de proveer soporte asistencial, primeros auxilios o rescate ante accidentes o contingencias en montaña.</li>
+        <li><strong>Acceso Protegido mediante Código de Confianza:</strong> Los datos médicos se almacenan bajo candado restringido. <strong>Ningún miembro de la cuadrilla ni los administradores pueden visualizar los datos médicos por defecto</strong>. La visualización en la lista de la ruta se habilita única y exclusivamente para la persona a quien el titular de la cuenta haya proporcionado voluntariamente en ruta su <strong>Código de Confianza</strong>.</li>
+        <li><strong>Custodia y Responsabilidad del Código:</strong> La entrega, custodia y asignación del Código de Confianza es potestad y responsabilidad exclusiva del senderista titular, garantizando que solo una persona de su estricta confianza pueda consultar sus datos de salud en una emergencia. Las redes de publicidad jamás tienen acceso a esta información.</li>
+        <li><strong>Ciclo Efímero y Purga Automática:</strong> Al concluir o cerrarse la sesión de la ruta/expedición, <strong>los datos médicos y los privilegios de visualización otorgados mediante el Código de Confianza se purgan y eliminan automáticamente</strong> de las bases de datos activas y de la sesión comunitaria, garantizando que no queden almacenados de forma permanente ni expuestos en perfiles públicos.</li>
       </ul>
     </section>
 
